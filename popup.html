@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
   </head>
-  <body>
-    <button id="btn">Run</button>
+  <body style="width: 500px">
+    <div style="position: relative">
+      <p>この拡張機能はGoogle Mapsの特定のURLで動作します</p>
+      <a href="/options.html" style="position: absolute;top:0;right:0"><img src="/setting.svg" style="width: 30px" alt="" /></a>
+      <p>
+        特定のURLとは https://www.google.co.jp/maps/place/名古屋城/@35.182434,136.8961219,15.5z のようなplaceページです
+      </p>
+    </div>
+    <div id="msg"></div>
     <script src="popup.js"></script>
   </body>
 </html>
