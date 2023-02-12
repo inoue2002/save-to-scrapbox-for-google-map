@@ -1,12 +1,15 @@
 {
-  "name": "My Extension",
-  "description": "My Extension",
+  "name": "Save to Scrapbox for Google Maps",
+  "description": "Save places found on google map to Scraobox",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": ["activeTab", "storage"],
   "options_page": "options.html",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_title": "Save this page to your Scrapbox"
   },
+  "icons": { "128": "icon.png" },
   "host_permissions": ["http://*/*", "https://*/*"]
 }
