@@ -3,13 +3,45 @@
   <head>
     <meta charset="UTF-8" />
   </head>
-  <body>
-    <h1>Options</h1>
+  <body style="width: 500px">
+    <h1>Save to Scrapbox for Google Maps Settings</h1>
     <div>
-      <label>プロジェクトのURL: https://scrapbox.io/:<input type="text" id="nameText" /></label>
-      <input type="button" value="Check" id="checkButton" />
+      <details>
+        <summary>デベロッパーモード</summary>
+        <div>
+          <input type="checkbox" id="isDevMode" />(DEV) 開発モード（開発モードにすることで自動遷移しなくなります）
+        </div>
+      </details>
+      <div>
+        <label>projectName: https://scrapbox.io/ <input type="text" id="projectName" /></label>
+      </div>
+      <div>
+        <label>（Optional）Google Maps Place API KEY : <input type="text" id="googleApiKey" /></label>
+      </div>
+      <div>
+        <label>（Optional）Gyazo API KEY : <input type="text" id="gyazoApiKey" /></label>
+      </div>
+      <div>
+        <input type="checkbox" id="isGetImage" />(Optional) 画像反映を有効化(画像反映を有効化するためにはGoogle
+        MapsAPIとGyazoAPIの両方のKEYの設定が必要です)
+      </div>
+      <input type="button" value="Save" id="saveButton" />
+      <a href="https://twitter.com/inoue2002" target="_blank" rel="noopener noreferrer">Contact</a>
+      <a href="https://github.com/inoue2002/save-to-scrapbox-for-google-map" target="_blank" rel="noopener noreferrer">Contribute</a>
     </div>
     <div id="msg"></div>
     <script src="options.js"></script>
   </body>
 </html>
+
+<style>
+#saveButton {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+</style>
